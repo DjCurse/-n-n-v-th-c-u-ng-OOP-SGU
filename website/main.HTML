@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Bố cục Flex</title>
+  <style>
+    
+    .header, .footer {
+      height: 100px;
+      background: lightblue;
+      text-align: center;
+      line-height: 100px;
+    }
+    .menu {
+      height: 50px;
+      background: lightgreen;
+      text-align: center;
+      line-height: 50px;
+    }
+    .main {
+      display: flex;
+      height: 300px;
+    }
+    .left {
+      flex: 20%;      /* chiếm 20% */
+      background: pink;
+      text-align: center;
+      line-height: 200px; 
+    }
+    .content {
+      flex: 80%;
+      background: lightyellow;
+      text-align: center;
+      line-height: 200px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">Header</div>
+  <div class="menu">Menu</div>
+  <div class="main">
+    <div class="left">Left 20%</div>
+    <div class="content">Content 80%</div>
+  </div>
+  <div class="footer">Footer</div>
+</body>
+</html>

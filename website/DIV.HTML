@@ -1,0 +1,54 @@
+<!DOCTYPE html>  
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Bố cục float</title>
+  <style>
+    .header, .footer {
+      height: 100px;
+      text-align: center;
+      line-height: 100px;
+    }
+    .menu {
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+    }
+    .left {
+      float: left;
+      width: 20%;
+      height: 300px;
+      text-align: center;
+    }
+    .content {
+      float: left;
+      width: 80%;
+      height: 300px;
+      text-align: center;
+    }
+    .clearfix {
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+    <div class ="header" style="background-color: tomato; height: 10pxw; width: 100px;"> 
+        Header
+    </div> 
+    <div clas = "menu" style ="background-color: rgb(103, 218, 172);width: 100px">   
+        TopMenu
+    </div> 
+    <div class="menu" style="background-color: rgb(169, 62, 62); width: 100px;">   
+            <divn class= "left" style="background-color: rgb(48, 60, 185);">
+                LeftMenu 
+            </divn> 
+            <divn class = "content" style="background-color: rgb(114, 153, 47);"> 
+                Content
+            </divn>
+            
+    </div> 
+    <div class = "footer" style="background-color: rgb(124, 39, 39);width: 100px;; height: 100px" >
+        FOOTER 
+    </div>
+</body>

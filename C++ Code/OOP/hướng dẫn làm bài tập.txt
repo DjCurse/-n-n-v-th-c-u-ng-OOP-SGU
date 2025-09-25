@@ -1,0 +1,29 @@
+hướng dẫn làm bài tập 
+Câu 6 chương 2
+thiết kế lớp số nguyên (có 1 thuộc tính số nguyên n) 
+, các phương thức gồm nhập, xuất và 5 câu hỏi của bài tập 7 chương 0 
+trong lớp số nguyên này 
+bài tập 7 chương 2 
+thiết kế lớp mảng gồm có 2 thuộc tính
++số nguyên n, số phần tử của mảng 
++mảng số nguyên arr và mảng tối ưu 
+các phương thức nhập, xuất và 7 câu hỏi trong bài tập số 8 chương 0 
+sử dụng array.copyof để sao chép (sử dụng tối ưu 1 mảng thôi) 
+
+bài tập số 8 của chương 2 
+thiết kế lớp chuỗi gồm có 1 thuộc tính chuỗi S 
+các phương thức nhập xuất có thêm 5 hàng của bài 9 chương 0  
+(xài duyệt cái phần tử của chuỗi rồi xóa bỏ các phần tử trắng của chuỗi) 
+
+bài tập số 9 của chương 2 
+thiết kết lớp ds sinh viên có
+2 thuộc tính là n số sinh viên hiện có, mảng sinh viên 
+các phương thức nhập, xuất n phần tử sinh viên 
+thêm, xóa, sửa, tìm kiếm 1 sinh viên 
+(tìm kiếm theo mã sinh viên, họ hoặc tên, trả về "danh sách" sinh viên tìm thấy) + thống kê(nâng cao) theo giới tính, độ tuổi (< 20, > 20) 
+ 
+thiết kế lớp sinh viên 
+bao gồm mã, họ, tên (không ghép họ với tên) 
+ngày sinh, giới tính, sđt  
+
+

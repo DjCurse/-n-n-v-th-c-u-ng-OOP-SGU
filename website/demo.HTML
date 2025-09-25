@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Demo Layout</title>
+<style>  
+    ul{
+        list-style-position: inside;
+    } 
+    li{
+        background-color: aquamarine; 
+        border: solid 2px blueviolet; 
+        border-right: 50px rgb(7, 7, 10);    
+        border-radius: 100px;
+        width: 200px; 
+        text-align: center; 
+        padding: 10px; 
+        margin: 5px; 
+    }
+    li::before{
+        color: red;
+    }
+    *{
+        box-sizing: border-box;
+    }
+  body { 
+    border:solid 2px red;
+    margin: 0;
+    font-family: Arial, sans-serif; 
+  }
+  .header { 
+    border:solid 2px red;
+    background: blue;
+    color: white;
+    padding: 70px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    position: relative; 
+    width: 100%;
+  }
+  .menu-ngang { 
+    border:solid 2px rgb(63, 54, 195);
+    background: lightgreen;
+    padding: 5px 0; 
+    display: flex;  
+    margin: 0;
+
+  }
+  .main { 
+    border:solid 2px red;
+    display: flex;
+    min-height: 100px; 
+    
+  }
+  .menu-doc { 
+    border:solid 2px blue;
+    width: 200px; 
+    flex: left;
+    background: lightblue;
+    padding: 10px;  
+    color: white;
+
+  }
+  .content {
+    border: solid 2px red;
+    background: beige;
+    width: 100%;   
+    height: 100px;     
+    overflow-y: scroll; 
+    overflow-x: auto;      
+    overflow-x: scroll;
+    padding: 80px;
+  }
+  .footer { 
+    border:solid 2px red;
+    background: plum;
+    text-align: center;
+    padding: 150px;
+  }
+  /* nút */
+  .btn {
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+  } 
+  .position{
+    position: relative; 
+    top: 65px; 
+    left: 70px; 
+  }
+</style>
+</head>
+<body>  
+
+
+  <div class="header">
+    <div style="position: absolute; left: 200px; top: 0px;">
+        <img src="tải_xuống-removebg-preview.png" width="167" height="167">
+    </div>
+    <div >Thông tin chung</div>
+    <div class="position">
+      <button class="btn">Đăng ký</button>
+      <button class="btn">Đăng nhập</button>
+      <button class="btn">Gửi Hỗ trợ</button>
+    </div>  
+  </div>  
+    
+        
+
+  <ul class="menu-ngang">
+
+    <li>Trang chủ</li>
+    <li>Giới thiệu</li>
+    <li>Thông tin tuyển sinh</li>
+    <li>Thông tin đào tạo</li>
+
+  </ul>
+  
+  
+
+        <tr> 
+            <div class="main">
+                <div border = "2px blue" >
+                        <div class="menu-doc">Trang chủ</div>
+                        <div class="menu-doc">Thông tin tuyển sinh</div>
+                        <div class="menu-doc">Thông tin đào tạo</div>
+                        <div class="menu-doc">Liên hệ</div>
+                </div> 
+                
+                <div class="content">
+                    nguyễn văn a nguyễn văn a nguyễn văn a nguyễn văn a nguyễn văn a <br>
+                    nguyễn văn a nguyễn văn a nguyễn văn a nguyễn văn a nguyễn văn a <br>
+                    nguyễn văn a nguyễn văn a nguyễn văn a nguyễn văn a nguyễn văn a <br> 
+                    nguyễn văn a nguyễn văn a nguyễn văn a nguyễn văn a nguyễn văn a <br>
+                    nguyễn văn a nguyễn văn a nguyễn văn a nguyễn văn a nguyễn văn a <br>
+                    nguyễn văn a nguyễn văn a nguyễn văn a nguyễn văn a nguyễn văn a <br> 
+                    nguyễn văn a nguyễn văn a nguyễn văn a nguyễn văn a nguyễn văn a <br>
+                    nguyễn văn a nguyễn văn a nguyễn văn a nguyễn văn a nguyễn văn a <br>
+                    nguyễn văn a nguyễn văn a nguyễn văn a nguyễn văn a nguyễn văn a <br> 
+                    nguyễn văn a nguyễn văn a nguyễn văn a nguyễn văn a nguyễn văn a <br>
+                    nguyễn văn a nguyễn văn a nguyễn văn a nguyễn văn a nguyễn văn a <br>
+                    nguyễn văn a nguyễn văn a nguyễn văn a nguyễn văn a nguyễn văn a <br> 
+                    nguyễn văn a nguyễn văn a nguyễn văn a nguyễn văn a nguyễn văn a <br>
+                    nguyễn văn a nguyễn văn a nguyễn văn a nguyễn văn a nguyễn văn a <br>
+                    nguyễn văn a nguyễn văn a nguyễn văn a nguyễn văn a nguyễn văn a <br>
+                     nguyễn văn a nguyễn văn a nguyễn văn a nguyễn văn a nguyễn văn a <br>
+                    nguyễn văn a nguyễn văn a nguyễn văn a nguyễn văn a nguyễn văn a <br>
+                    nguyễn văn a nguyễn văn a nguyễn văn a nguyễn văn a nguyễn văn a <br>
+                    nguyễn văn a nguyễn văn a nguyễn văn a nguyễn văn a nguyễn văn a <br>
+                    nguyễn văn a nguyễn văn a nguyễn văn a nguyễn văn a nguyễn văn a <br>
+                    nguyễn văn a nguyễn văn a nguyễn văn a nguyễn văn a nguyễn văn a <br>
+                    nguyễn văn a nguyễn văn a nguyễn văn a nguyễn văn a nguyễn văn a <br>
+                    nguyễn văn a nguyễn văn a nguyễn văn a nguyễn văn a nguyễn văn a <br>
+                    nguyễn văn a nguyễn văn a nguyễn văn a nguyễn văn a nguyễn văn a <br>
+                </div>
+            </div>
+        </tr> 
+
+  <div class="footer">Footer</div> 
+
+</body>
+</html>
