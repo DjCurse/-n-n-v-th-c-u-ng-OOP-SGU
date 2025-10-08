@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class SanPham {
+abstract class SanPham {
     private String MaSP; 
     private String Ten; 
     private String Size;  
@@ -126,4 +126,6 @@ public class SanPham {
         this.HSD = HSD;
     } 
     
+    public abstract String danhGiaCalories();
+
 }
