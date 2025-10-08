@@ -36,8 +36,32 @@ import java.util.Scanner;
     @Override
     public void xuat(){ 
         super.xuat();
-        System.out.printf("| Do chin: %s | Loai thit: %s \n", DoChin, LoaiThit);
+        System.out.printf("| Do chin: %s | Loai thit: %s ", DoChin, LoaiThit);
+        System.out.printf("| Danh gia calories: %s \n", danhGiaCalories());
+    }  
+
+    @Override
+    public String danhGiaCalories() {
+        float cal = getCalories();
+        String size = getSize().toLowerCase();
+
+        if (size.equals("l")) {
+            if (cal > 400) return "Cao";
+            else if (cal >= 200) return "Vừa";
+            else return "Thấp";
+        } 
+        else if (size.equals("m")) {
+            if (cal > 300) return "Cao";
+            else if (cal >= 150) return "Vừa";
+            else return "Thấp";
+        } 
+        else {
+            if (cal > 200) return "Cao";
+            else if (cal >= 100) return "Vừa";
+            else return "Thấp";
+        }
     }
+
 
     public void setDoChin(String dc){
         DoChin = dc; 
