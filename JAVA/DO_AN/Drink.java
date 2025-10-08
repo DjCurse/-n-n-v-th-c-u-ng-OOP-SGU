@@ -36,9 +36,31 @@ import java.util.Scanner;
     @Override 
     public  void xuat(){
         super.xuat(); 
-        System.out.printf("| Luong cafein: %f | Luong duong: %f \n", cafein, sugar); 
-        
-    }  
+        System.out.printf("| Luong cafein: %f | Luong duong: %f ", cafein, sugar); 
+        System.out.printf("| Danh gia calories: %s \n", danhGiaCalories());
+    }   
+
+    @Override 
+    public String danhGiaCalories() {
+        float cal = getCalories();
+        String size = getSize().toLowerCase();
+
+        if (size.equals("l")) { 
+            if (cal > 250) return "Cao";
+            else if (cal >= 100) return "Vừa";
+            else return "Thấp";
+        } 
+        else if (size.equals("m")) { 
+            if (cal > 180) return "Cao";
+            else if (cal >= 80) return "Vừa";
+            else return "Thấp";
+        } 
+        else { 
+            if (cal > 120) return "Cao";
+            else if (cal >= 60) return "Vừa";
+            else return "Thấp";
+        }
+    }
 
     public void setCafein(float cafe){
         this.cafein = cafe; 
@@ -55,7 +77,4 @@ import java.util.Scanner;
     public float getSugar(){
         return sugar;
     }
-
-
-
 }
