@@ -46,7 +46,17 @@ class DanhSachSP {
                 }
             }
         }
+    }  
+
+    public boolean tonTaiMaSP(String ma) { // sử dụng hàm này để kiểm tra thuộc tính khóa chính
+        for (int i = 0; i < n; i++) {
+            if (ds[i].getMaSP().equalsIgnoreCase(ma)) {
+                return true; 
+            }
+        }
+        return false; 
     } 
+
      
     public void setN(int num){
         this.n = num; 
