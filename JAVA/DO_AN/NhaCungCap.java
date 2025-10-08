@@ -61,7 +61,7 @@ class NhaCungCap  {
         do { 
             System.out.print("Nhap ma san pham: ");
             Masanpham =  sc.nextLine();   
-            if (!dsp.tonTaiMaSP(Masanpham)) {
+            if (!dsp.tonTaiMaSP(Masanpham)) { // áp dụng hàm kiểm tra bên danh sách sản phẩm
                 System.out.println("Ma san pham khong ton tai. Vui long nhap lai.");
             } else {
                 break; 
