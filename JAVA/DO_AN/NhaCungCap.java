@@ -3,27 +3,27 @@ class NhaCungCap  {
     private String Manhacc; 
     private String tenncc; 
     private String diachi; 
-    private SanPham masanpham;  
+    private String Masanpham; 
 
     public NhaCungCap(){
         Manhacc = ""; 
         tenncc = ""; 
         diachi = "";   
-        masanpham = null;
+        Masanpham = "";
     }  
 
-    public NhaCungCap(String mancc, String tenncc, String diachi, SanPham sp){
+    public NhaCungCap(String mancc, String tenncc, String diachi, String sp){
         this.Manhacc = mancc; 
         this.tenncc = tenncc; 
         this.diachi = diachi; 
-        this.masanpham = sp; 
+        this.Masanpham = sp;
     } 
 
     public NhaCungCap(NhaCungCap ncc){
         this.Manhacc = ncc.Manhacc; 
         this.tenncc = ncc.tenncc; 
         this.diachi = ncc.diachi; 
-        this.masanpham = ncc.masanpham; 
+        this.Masanpham = ncc.Masanpham; 
     } 
 
     public void setManhacc(String mancc){
@@ -44,45 +44,34 @@ class NhaCungCap  {
     public String getDiachi(){
         return diachi; 
     } 
-    public void setMasanpham(SanPham sp){
-        this.masanpham = sp; 
+    public void setMasanpham(String sp){
+        this.Masanpham = sp; 
     } 
-    public SanPham getMasanpham(){
-        return masanpham; 
+    public String getMasanpham(){
+        return Masanpham; 
     } 
-    public void nhap(){
+    public void nhap(DanhSachSP dsp){
         Scanner sc = new Scanner(System.in); 
         System.out.print("Nhap ma nha cung cap: ");  
         Manhacc = sc.nextLine(); 
         System.out.print("Nhap ten nha cung cap: ");  
         tenncc = sc.nextLine(); 
         System.out.print("Nhap dia chi: ");  
-        diachi = sc.nextLine(); 
-        System.out.println("Nhap thong tin san pham cung cap: "); 
-        System.out.println("Nhap thong tin do uong hoac do an? (1: do uong || 2: do an): ");
-        int choice = sc.nextInt();
-        sc.nextLine(); 
-        switch(choice) { 
-            case 1 -> {
-                System.out.println("Nhap thong tin do uong: ");
-                masanpham = new Drink(); 
-                masanpham.nhap();
-            } 
-            case 2 -> { 
-                System.out.println("Nhap thong tin do an: ");
-                masanpham = new Food();
-                masanpham.nhap();
+        diachi = sc.nextLine();  
+        do { 
+            System.out.print("Nhap ma san pham: ");
+            Masanpham =  sc.nextLine();   
+            if (!dsp.tonTaiMaSP(Masanpham)) {
+                System.out.println("Ma san pham khong ton tai. Vui long nhap lai.");
+            } else {
+                break; 
             }
-        }
-    }
+        } while (true);
+    } 
 
     public void xuat(){
-        System.out.printf("Ma nha cung cap: %s | Ten nha cung cap: %s | Dia chi: %s \n", Manhacc, tenncc, diachi); 
-        System.out.println("Thong tin san pham cung cap: "); 
-        masanpham.xuat(); 
+        System.out.printf("Ma nha cung cap: %s | Ten nha cung cap: %s | Dia chi: %s | Ma san pham: %s \n", Manhacc, tenncc, diachi, Masanpham); 
+        
     }
-
-
-
 
 }
