@@ -45,9 +45,13 @@ abstract class SanPham {
     }  
 
     public void nhap(){ 
+        
         Scanner sc = new Scanner(System.in); 
         System.out.print("Nhap ma san pham: ");  
-        MaSP = sc.nextLine(); 
+        MaSP = sc.nextLine();   
+
+
+
         System.out.print("Nhap ten san pham: ");  
         Ten = sc.nextLine(); 
         System.out.print("Nhap size: ");  
@@ -73,7 +77,7 @@ abstract class SanPham {
     } 
 
     public void xuat(){
-        System.out.printf("\n | Ma san pham: %s | Ten san pham: %s | Size: %s | don gia: %l | Calories: %f | HSD: %s "
+        System.out.printf("\n | Ma san pham: %s | Ten san pham: %s | Size: %s | don gia: %d | So luong: %d | Calories: %f | HSD: %s "
                             , MaSP, Ten, Size, DonGia, SL, Calories, HSD); 
     } 
 
@@ -126,6 +130,9 @@ abstract class SanPham {
         this.HSD = HSD;
     } 
     
-    public abstract String danhGiaCalories();
+    public abstract String danhGiaCalories(); 
 
+    public static void main(String[] args) {
+    
+    }
 }
