@@ -1,4 +1,5 @@
-package SanPham;
+package NhaCungCap; 
+import SanPham.SanPham;
 import java.util.Scanner;
 class DanhSachncc {
     private int n; 
@@ -104,4 +105,5 @@ class DanhSachncc {
     
 
 }
+
 
