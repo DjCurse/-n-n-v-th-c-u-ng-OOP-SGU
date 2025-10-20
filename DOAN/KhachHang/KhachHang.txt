@@ -1,0 +1,3 @@
+Ma KH: 1 | Ho ten: tran minh kha | SDT: 0383359257 | Cap bac 
+Ma KH: 4 | Ho ten: nguyen tran minh thao | SDT: 03387754893 | Cap bac 
+Ma KH: 5 | Ho ten: tran minh thao | SDT: 98394934893 | Cap bac: moi 
