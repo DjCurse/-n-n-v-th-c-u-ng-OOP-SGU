@@ -1,3 +1,4 @@
+package SanPham;
 import java.util.Scanner;
 class DanhSachncc {
     private int n; 
@@ -103,3 +104,4 @@ class DanhSachncc {
     
 
 }
+
