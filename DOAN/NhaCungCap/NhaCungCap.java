@@ -1,3 +1,5 @@
+package NhaCungCap; 
+import SanPham.SanPham;
 import java.util.Scanner;
 class NhaCungCap  {
     private String Manhacc; 
@@ -75,3 +77,4 @@ class NhaCungCap  {
     }
 
 }
+
