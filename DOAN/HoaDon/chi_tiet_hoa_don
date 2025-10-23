@@ -1,0 +1,76 @@
+package ChiTietHoaDon;
+
+public class chi_tiet_hoa_don {
+    package ChiTietHoaDon[[]];
+
+public class ChiTietHoaDon {
+    //  Thuộc tính (Encapsulation)
+    private String maHD;       // Mã hóa đơn
+    private String maSP;       // Mã sản phẩm
+    private int soLuong;       // Số lượng sản phẩm
+    private double tongTien;   // Tổng tiền cho dòng chi tiết này
+
+    //  Constructor
+    public ChiTietHoaDon() {}
+
+    public ChiTietHoaDon(String maHD, String maSP, int soLuong, double tongTien) {
+        this.maHD = maaHD;
+        this.maSP = maSP;
+        this.soLuong = soLuong;
+        this.tongTien = tongTien;
+    }
+
+    // Getter & Setter
+    public String getMaHD() {
+        return maHD;
+    }
+
+    public void setMaHD(String maHD) {
+        this.maHD = maHD;
+    }
+
+    public String getMaSP() {
+        return maSP;
+    }
+
+    public void setMaSP(String maSP) {
+        this.maSP = maSP;
+    }
+
+    public int getSoLuong() {
+        return soLuong;
+    }
+
+    public void setSoLuong(int soLuong) {
+        this.soLuong = soLuong;
+    }
+
+    public double getTongTien() {
+        return tongTien;
+    }
+
+    public void setTongTien(double tongTien) {
+        this.tongTien = tongTien;
+    }
+
+    // Hành vi (method)
+    public void hienThi() {
+        System.out.println("Mã HD: " + maHD);
+        System.out.println("Mã SP: " + maSP);
+        System.out.println("Số lượng: " + soLuong);
+        System.out.println("Tổng tiền: " + tongTien + " VND");
+    }
+
+    // Ghi đè toString()
+    @Override
+    public String toString() {
+        return "ChiTietHoaDon{" +
+                "maHD='" + maHD + '\'' +
+                ", maSP='" + maSP + '\'' +
+                ", soLuong=" + soLuong +
+                ", tongTien=" + tongTien +
+                '}';
+    }
+}
+
+}
