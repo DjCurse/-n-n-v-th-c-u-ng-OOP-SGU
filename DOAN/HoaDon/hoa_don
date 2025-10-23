@@ -1,0 +1,73 @@
+package HoaDon;
+
+import java.time.LocalDate; // de dung kieu ngay thang
+
+public class HoaDon {
+    //  Thuộc tính (Encapsulation)
+    private String maHD;
+    private String maKho;
+    private LocalDate ngayLapHD;
+    private double tongTien;
+
+    // Constructor
+    public HoaDon() {}
+
+    public HoaDon(String maHD, String maKho, LocalDate ngayLapHD, double tongTien) {
+        this.maHD = maHD;
+        this.maKho = maKho;
+        this.ngayLapHD = ngayLapHD;
+        this.tongTien = tongTien;
+    }
+
+    //  Getter và Setter
+    public String getMaHD() {
+        return maHD;
+    }
+
+    public void setMaHD(String maHD) {
+        this.maHD = maHD;
+    }
+
+    public String getMaKho() {
+        return maKho;
+    }
+
+    public void setMaKho(String maKho) {
+        this.maKho = maKho;
+    }
+
+    public LocalDate getNgayLapHD() {
+        return ngayLapHD;
+    }
+
+    public void setNgayLapHD(LocalDate ngayLapHD) {
+        this.ngayLapHD = ngayLapHD;
+    }
+
+    public double getTongTien() {
+        return tongTien;
+    }
+
+    public void setTongTien(double tongTien) {
+        this.tongTien = tongTien;
+    }
+
+    // Hành vi (method)
+    public void hienThi() {
+        System.out.println("Mã HD: " + maHD);
+        System.out.println("Mã Kho: " + maKho);
+        System.out.println("Ngày lập: " + ngayLapHD);
+        System.out.println("Tổng tiền: " + tongTien + " VND");
+    }
+
+    //  Ghi đè toString()
+    @Override
+    public String toString() {
+        return "HoaDon{" +
+                "maHD='" + maHD + '\'' +
+                ", maKho='" + maKho + '\'' +
+                ", ngayLapHD=" + ngayLapHD +
+                ", tongTien=" + tongTien +
+                '}';
+    }
+}
